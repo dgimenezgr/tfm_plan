@@ -1,0 +1,19 @@
+---
+title: "TFM - Plan"
+author: "Giménez Gredilla, Daniel"
+date: "9 de octubre de 2017"
+output:  
+  pdf_document: 
+    toc: yes
+    toc_depth: 2
+    fig_caption: yes
+options:
+  encoding: utf8
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, fig.lp = "Figura ", fig.align='center', tidy.opts=list(width.cutoff=60),tidy=TRUE, cache = TRUE, comment = NULL, out.width='450px', out.height='200px', dpi=200)
+```
+
+\pagebreak  
+
