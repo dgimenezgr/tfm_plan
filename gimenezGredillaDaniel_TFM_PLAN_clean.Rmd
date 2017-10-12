@@ -28,16 +28,10 @@ require(reshape2)
 
 ##1.1 - General description
 
-```{r}
-##Explicar a grandes rasgos en qué consistirá el TFM. Este punto no debe confundirse con una introducción.
-```
 The current project is framed in the context of lymphocyte classification. Lymphocyte classification is achieved through the evaluation of morphologic, geometric and colorimetric features. Current classification workflows (*Puigví et al.* [1]) make use of dimension reduction techniques to avoid the biostatistical problems derived from an overabundance of variables. This project aims to make a comparison between different dimension reduction techniques and their outputs.  
 
 ##1.2 - MDFP justification
 
-```{r}
-##Explicar porqué se desarrolla este TFM , porqué se ha elegido este área y tema.
-```
 Current lymphocyte classification workflows, in an oncologycal background, aim to classify normal, abnormal and reactive lymphocytes, being neoplasic lymphoid cells the most difficult to be recognized by only qualitative morphologic features (*Alférez Baquero et al.* [2]). The medical problem is apparent in this stage: lymphocite features have been, up to this point, evaluated by experts in this area; this introduces a measure of intraobserver and interobserver variation (*Puigví et al.* [1]).  
 
 In these articles, quantitative, machine-learning oriented classification workflows have been described that take morphological and geometric-colorimetric features and, through the use of dimension reduction techniques, construct a limited set of significant features explaining the most variance; this enhances the accuracy of the classification while keeping the processing requirements to a reasonable amount.  
@@ -46,24 +40,13 @@ Correct lymphocyte classification improves the diagnosis of lymphoma and thus in
 
 #2 - Goals
 
-```{r}
-##Tanto los objetivos generales como los específicos deben ir numerados.
-```
-
 ##2.1 - General goals
 
-```{r}
-##Deben ser pocos (quizás un par o máximo tres) y suficientemente amplios para cubrir todo el alcance del proyecto. Deben estar redactados de forma concreta y evaluable.
-```
 1 - To design a **comparison protocol** for different dimension reduction techniques.  
 
 2 - To apply this protocol to each technique within the frame of lymphocyte classification, achieving an **objectively quantifiable scoring system**.  
 
 ##2.2 - Specific goals
-
-```{r}
-##Se trata de desglosar cada objetivo general en otros más concretos (no confundir con tareas). Se deben redactar con un verbo en infinitivo de significado medible (no puede ser por ejemplo “saber” porque no se puede medir o evidenciar su cumplimiento).
-```
 
 **Specific goals for Phase 1 (17-10-2017 through 20-11-2017)**  
 
@@ -83,10 +66,6 @@ Correct lymphocyte classification improves the diagnosis of lymphoma and thus in
 
 #3 - Focus and methods
 
-```{r}
-##Indicar cuáles son las posibles estrategias para llevar a cabo el trabajo e indicar cuál es la elegida. Valorar porqué esta es la más apropiada para lograr los objetivos.
-```
-
 Given the specific goal of this project (the comparison of dimension reduction techniques), the focus to accomplish it will be directed to the evaluation of the accuracy of classification tasks implementing each of these techniques. Feature construction aims to explain the most variance through the less possible, most explicative, features. For a constant given amount of variance explained through variables in a classification task, the accuracy of the predicted classes improves while the number of dimensions decreases.  
 
 The methods to accomplish this will be a selection of dimension reduction techniques, including **PCA**, **ICA** and **Factor Analysis** amongst others, applied to the problem dataset and used as input for the same machine learning classification algorithm (SVM with an RBG kernel).  
@@ -95,15 +74,7 @@ This method has been evaluated as the most appropriate, as it makes it possible 
 
 #4 - Planning, milestones and timetables
 
-```{r}
-##Como metodología de trabajo se recomienda que una vez decidido el TFM que se llevará a cabo y concretados sus objetivos, se desglose cada uno de ellos en tareas y se proponga una planificación temporal.
-```
-
 ##4.1 - Tasks
-
-```{r}
-##Enumerar las diversas tareas en que se han desglosado los objetivos y la duración que se asigna a cada una. Tiene que haber una coherencia numérica entre objetivos generales, objetivos específicos y tareas.
-```
 
 **Tasks for Phase 1:**  
 
@@ -134,10 +105,6 @@ This method has been evaluated as the most appropriate, as it makes it possible 
 2.3.3 - Elaborate monitoring report for **Phase 2**. (8 days, 24 hours equivalent)
 
 ##4.2 - Calendar
-
-```{r}
-##Es recomendable usar un programa específico de planificación como por ejemplo el MS Project, que permita calendarizar las diferentes tareas y subtareas y generar un diagrama que se pueda insertar en el documento.
-```
 
 The following Gantt diagram represents the division of time through the proccess of this project:  
 
@@ -180,10 +147,6 @@ ggplot(tasks_melted, aes(value, task)) +
 
 ##4.3 - Milestones
 
-```{r}
-##Los hitos marcan los estados intermedios del proyecto y permiten avanzar en sucesivas etapas de resultados prácticos. Si se produjera un retraso en la consecución de alguna de los hitos repercutiría en otras actividades y tareas del proyecto y podría comportar un atraso en los plazos marcados. Por lo tanto, es imprescindible ser el máximo de estricto en el cumplimiento de las fechas. Hay que basarse en el Plan Docente y concretamente en las fechas clave que se determinan.
-```
-
 The following tables represent the milestones for each development phase.  
 
 ```{r phase_1_milestone_table, echo=FALSE}
@@ -193,7 +156,6 @@ ms_3 <- c("20-NOV-2017","Monitoring report for Phase 1")
 p1_ms <- data.frame(rbind(ms_1,ms_2,ms_3)) 
 kable(p1_ms, caption = "Phase 1 milestones", align = c('l','l'), col.names = c("Deadline","Milestone"), row.names = FALSE)
 ```
-
 
 ```{r phase_2_milestone_table, echo=FALSE}
 ms_4 <- c("28-NOV-2017","Scoring system completely defined")
@@ -212,10 +174,6 @@ kable(pp_ms, caption = "Post-production milestones", align = c('l','l'), col.nam
 ```
 
 ##4.4 - Risk analysis
-
-```{r}
-##Enumerar y comentar qué factores pueden repercutir negativamente en el seguimiento del plan de trabajo y en la consecución del proyecto. Hay dos factores que tienen influencia en cualquier proyecto: el factor tiempo y el alcance del mismo, pero hay otros asociados a las características específicas de cada TFM y al método de investigación y/o de desarrollo que se utiliza. Igual que los objetivos, deben ser concretos.
-```
 
 Some of the factors that could hinder the proposed work frames are the following:
 
@@ -270,10 +228,6 @@ This project's self-evaluation will confront it from two angles: first, a side-b
 2 - Structure: the project follows the structure established by the documentation provided through the subject. Contents are correctly divided in sections. The project as a whole presents a semantic flow without logical leaps that may hinder the reader's comprehension.  
 
 #6 - Project structure
-
-```{r}
-##Concretar el contenido de cada una de las partes del proyecto tal como describe el Plan Docente.
-```
 
 The final project will fit the following structure.  
 
