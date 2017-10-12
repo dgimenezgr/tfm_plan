@@ -1,7 +1,7 @@
 ---
 title: "MDFP - Project plan"
 author: "Giménez Gredilla, Daniel"
-date: "9 de octubre de 2017"
+date: "9th October 2017"
 output:  
   pdf_document: 
     toc: yes
